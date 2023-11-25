@@ -25,82 +25,106 @@ body {
 .img-image {
     width: 285px;
     display: flex;
-    border: 10px 0 0 10px;
 }
 
 .img-image img {
-    width: 100%;
-    height: 100%;
     border-radius: 10px 0 0 10px;
 }
 
 .div-info {
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
     background-color: #FFF;
     padding: 33px 40px;
+    border-radius: 0 15px 15px 0;
 }
 
 .div-info h1 {
     max-width: 350px;
     font-size: 20px;
+    letter-spacing: .25px;
+    line-height: 28px;
     color: var(--Very-Dark-Grayish-Blue);
 }
 
-.div-info p {
+.div-info .p-section {
     max-width: 350px;
+    font-size: 13px;
+    letter-spacing: .11px;
+    line-height: 20px;
     color: var(--Grayish-Blue);
+    margin-top: 11px;
 }
 
 .div-perfil {
     display: flex;
     align-items: center;
+    margin-top: 18px;
 }
 
 .div-perfil .img-perfil {
-    width: 45px;
+    width: 40px;
     border-radius: 50%;
+    padding-top: 2px;
 }
 
 .div-perfil-info {
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
+    margin-left: 16px;
 }
 
 .div-perfil-info p:first-child {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     color: var(--Very-Dark-Grayish-Blue);
+    letter-spacing: .11px;
+    padding-top: 2px;
 }
 
 .div-perfil-info p:last-child {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
+    color: var(--Grayish-Blue);
+    letter-spacing: -.11px;
+    padding-top: 2px;
 }
 
 .div-perfil .img-share {
-    width: 30px;
-    display: flex;
+    width: 34px;
+    height: 34px;
     text-align: center;
     background-color: var(--Light-Grayish-Blue);
     border-radius: 50%;
-    padding: 9px;
-    margin: 0 0 0 auto;
+    padding: 10px 0;
+    margin-left: auto;
+}
+
+.div-perfil .img-share.active path{
+    fill: #FFF;
 }
 
 .div-footer {
-    width: 220px;
-    height: 50px;
-    display: flex;
+    width: 246px;
+    height: 55px;
+    display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: -12%;
-    bottom: 38%;
+    right: -15%;
+    bottom: 34%;
+    gap: 16px;
     background-color:var(--Very-Dark-Grayish-Blue);
     border-radius: 10px;
+}
+
+.div-footer p {
+    font-size: 13px;
+    color: var(--Grayish-Blue);
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 .div-footer::after {
@@ -111,18 +135,26 @@ body {
     background-color: var(--Very-Dark-Grayish-Blue);
     margin-bottom: -20%;
     transform: rotate(45deg);
-    z-index: 1;
 }
 
 .redes-sociais {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 16px;
 }
 
 .redes-sociais li {
+    display: flex;
+}
+
+.redes-sociais li:nth-child(2){
+    padding-top: 3px;
+}
+
+.redes-sociais li .social {
     width: 20px;
     height: 20px;
+    cursor: url(https://github.com/HumbertoFox/repository/assets/126817628/ef5feb7b-75d4-47ee-a596-7be253492ebd), auto;
 }
 
 .attribution {
