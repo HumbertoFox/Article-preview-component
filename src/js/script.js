@@ -15,6 +15,6 @@ selectIconShare.addEventListener("mouseenter", () => {
             selectIconShare.classList.remove("active");
             selectIconShare.style.backgroundColor = "var(--Light-Grayish-Blue)";
             selectDivPerfil.classList.remove("perfil-disabled");
-        }, 2000);
+        }, 3000);
     });
 });
